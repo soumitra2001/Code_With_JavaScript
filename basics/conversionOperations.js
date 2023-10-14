@@ -1,4 +1,5 @@
 // Number to other type
+
 let num = 42
 
 let numberToString = String(num)
@@ -32,7 +33,38 @@ console.log(typeof bolToStr);
 
 // true => "true", false => "false"
 // true => 1, false => 0
-
-
 console.log(typeof String(num));
 
+// ***********************Operations*********************************
+
+let value = 3
+let val1 = -value
+
+console.log(val1);
+
+console.log(2+1)
+console.log(3-2);
+console.log(3*4);
+console.log(2**3);
+console.log(4/2);
+console.log(3%5);
+
+console.log("2"+3);
+console.log(4+"5");
+console.log("7"+6+8);
+console.log(9+1+"9");
+
+console.log((3+6)*2/3%((4+4)*2));
+
+console.log(+true);
+console.log(+"");
+
+let num1,num2,num3
+num1=num2=num3=3
+
+// console.log(num2);
+
+// Prefix and Postfix
+let count=2
+console.log(count++);
+console.log(++count);
