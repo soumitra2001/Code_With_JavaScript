@@ -18,3 +18,16 @@ console.log("Hello Supriya")
 console.log(typeof null); // object
 
 console.log(typeof undefined); // undefined
+
+const obj = {
+    name:"Supriya",
+    email:"sh@gmail.com"
+}
+
+console.log(obj.email);
+
+const fun = function(a,b){
+    return a+b;
+}
+
+console.log(fun(9,2));
