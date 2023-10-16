@@ -24,3 +24,18 @@ const jsUser = {
 // console.log(jsUser["user location"]);
 
 // console.log(typeof jsUser[mySym]);
+
+// Object.freeze(jsUser)  // for make the object unchangable
+
+jsUser.greeting = function(){
+    console.log("Hello Js User");
+}
+
+jsUser.greetTwo = function(){
+    console.log(`Hello Js user ${this.name}`);
+}
+
+// console.log(jsUser.greeting);
+
+jsUser.greeting();
+jsUser.greetTwo();
