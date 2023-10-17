@@ -1,6 +1,6 @@
 // Singleton
 // Object.create
-
+/*
 // Object literals
 const mySym = Symbol("key")
 // console.log(mySym.description);
@@ -39,3 +39,34 @@ jsUser.greetTwo = function(){
 
 jsUser.greeting();
 jsUser.greetTwo();
+*/
+const obj1 = {1:"a", 2:"s", 3:"e"}
+const obj2 = {4:"b", 5:"c", 6:"u"}
+
+const obj3 = Object.assign(obj1, obj2) // Syntex is Object.assign(target,sources), source can be many
+const obj4 = Object.assign({}, obj1, obj2)
+
+const obj5 = {...obj1, ...obj2}
+// console.log(obj3,"\n",obj4,"\n",obj5);
+
+// Destructure of an Object
+
+const course = {
+    courseName: "Js Master",
+    fees: 300,
+    instructor: "Supriya"
+}
+
+const {instructor: teacher} = course  // Object destructure
+// console.log(teacher);
+
+// let arr2 = [1,4,4,7]
+// const {3:idx} = arr2  // Array destructure
+// console.log(idx);
+
+// JSON
+// {
+//     "name": "Supriya",
+//     "age": 22,
+//     "email": "sg@ghorai.com"
+// }
