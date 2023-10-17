@@ -5,12 +5,12 @@ function greet(){
 
 // greet()
 
-function addNumber(num1, num2){
+function addTwoNumber(num1, num2){
     let result = num1 + num2
     return result
 }
 
-// console.log(addNumber(2,4));
+// console.log(addTwoNumber(2,4));
 
 function sayHello(username){
     if(!username){
@@ -22,5 +22,28 @@ function sayHello(username){
 // console.log((sayHello()));
 // console.log((sayHello("Supriya")));
 
+function calculateCartPrice(val1, val2, ...nums){
+    console.log(`val1: ${val1}, val2: ${val2}`);
+    return nums;
+}
 
+// console.log(calculateCartPrice(921));
+// console.log(calculateCartPrice(921,21));
+// console.log(calculateCartPrice(921, 700, 200, 100, 900));
+
+const user = {
+    userName: "Supriya",
+    profession: "Software Engineer"
+}
+
+function handleObject(anyObject){
+    return `Username is ${anyObject.userName} and user profession is ${anyObject.profession}`
+}
+
+// console.log(handleObject(user));
+
+console.log(handleObject({
+    userName: "Hello",
+    profession: "Java Developer"
+}));
 
