@@ -13,4 +13,9 @@
 
 ( (name) => {
     console.log(`Hello and welcome ${name}`);
-})("Supriya")
+})("Supriya");
+
+
+((a,b) => {
+    console.log(`Sum of ${a} and ${b} is = `+(a+b));
+})(4,89)
