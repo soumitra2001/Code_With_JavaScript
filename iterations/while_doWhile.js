@@ -1,9 +1,9 @@
 
 let idx=0;
 
-// while(idx<10){
-//     console.log(`idx: ${idx++}`);
-// }
+while(idx<10){
+    console.log(`idx: ${idx++}`);
+}
 
 let arr=["Hi","Hello","Hey","Bye"]
 

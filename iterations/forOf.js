@@ -1,3 +1,4 @@
+// for-of loop =>
 
 let arr=[3,8,9,4,1]
 
@@ -14,10 +15,16 @@ for(const ch of str){
     console.log(ch);
 }
 
+// for-in loop =>
+
+let obj ={
+    name:"Supriya",
+    age:22,
+    email:"hello@bye.com"
+}
+
+for(const key in obj){
+    console.log(obj[key]);
+}
 
 
-
-
-// arr.forEach(element => {
-//     console.log(element);
-// });
