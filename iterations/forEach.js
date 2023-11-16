@@ -1,11 +1,11 @@
 let arr=[2,8,6,4,10]
 
 arr.forEach(function(ele){
-    // console.log(ele);
+    console.log(ele);
 })
 
 arr.forEach(ele =>{
-    // console.log(ele);
+    console.log(ele);
 })
 
 let objArr=[
