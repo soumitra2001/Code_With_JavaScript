@@ -11,6 +11,8 @@
     </ul>
 </body>
 <script>
+
+    // Add Element
     function addLanguage(langName){
         const ele=document.createElement("li")
         const text=document.createTextNode(langName)
@@ -21,5 +23,23 @@
 
     addLanguage("Java");
     addLanguage("Python");
+    addLanguage('Ruby')
+
+    // Edit Element
+    const thirdLanguage = document
+        .querySelector("li:nth-child(3)");
+    const myLanguage=document.createElement("li")
+    myLanguage.appendChild(document.createTextNode("CPP"));
+    thirdLanguage.replaceWith(myLanguage);
+
+    // Edit Element (Another apporch)
+    const listLanguage=document
+            .querySelector("li:nth-child(3)");
+    listLanguage.outerHTML="<li>Python</li>";
+
+    // Remove Element
+    const lastLanguage=document.querySelector("li:last-child");
+    lastLanguage.remove();
+
 </script>
 </html>
